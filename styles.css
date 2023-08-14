@@ -1,0 +1,362 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  scroll-behavior: smooth;
+}
+
+/* ----- Header ----- */
+
+.header {
+  min-height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+  background-image: linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url(images/background-cover.jpg);
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 7%;
+}
+
+.logo {
+  height: 45px;
+  width: 230px;
+  cursor: pointer;
+}
+
+.nav-links li {
+  list-style: none;
+  display: inline;
+  padding: 0 20px;
+  margin: 10px 30px;
+  position: relative;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.register-btn {
+  background: #fff;
+  color: #000;
+  padding: 8px 20px;
+  border-radius: 20px;
+  text-decoration: none;
+  font-size: 14px;
+  transition: all 0.4s ease;
+}
+
+.desc {
+  text-align: center;
+  color: #fff;
+}
+.desc h1{
+  font-size: 3.6vw;
+  font-weight: 700;
+  margin-top: 11vw;
+  transition: all 1s;
+}
+
+.desc p {
+  font-weight: 400;
+  margin: auto;
+  width: 70%;
+}
+
+.search-bar {
+  background: #fff;
+  width: 70%;
+  margin: 40px auto;
+  padding: 6px 10px 6px 10px;
+  border-radius: 50px;
+}
+
+.search-bar form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.search-bar form div {
+  border-right: #888 solid 1px;
+  padding: 0 50px;
+}
+
+.search-bar form div:nth-last-child(2) {
+  border: none;
+}
+
+.search-bar form input {
+  display: block;
+  border: 0;
+  outline: none;
+  background: transparent;
+}
+
+.search-bar form button {
+  background: #18392b;
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+
+.search-bar label {
+  font-weight: 600;
+}
+
+/* ----- Exclusives ----- */
+
+.container {
+  padding: 0 7%;
+}
+
+.sub-title {
+  margin: 50px 0 20px;
+  font-size: 2.2vw;
+  font-weight: 500;
+  color: #333;
+}
+
+.exclusives {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.exclusives div img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.4s ease;
+}
+
+.exclusives div {
+  position: relative;
+  cursor: pointer;
+}
+
+.exclusives div span {
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* ----- Trending Places ----- */
+
+.trending {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-gap: 30px;
+}
+
+.trending div img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+  transition: all 0.4s ease;
+}
+
+.trending h3 {
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* ----- Call to action ----- */
+
+.cta {
+  width: 100%;
+  height: 400px;
+  background-image: linear-gradient(to right, #18392b, transparent), url(images/bedroom.jpg);
+  border-radius: 10px;
+  margin: 80px 0;
+  transition: all 0.4s;
+}
+
+.cta-desc {
+  padding-top: 4rem;
+  padding-left: 2.5rem;
+  width: 50%;
+  color: #fff;
+}
+
+.cta-desc h2 {
+  font-size: 3rem;
+}
+
+.cta-btn {
+  margin: 2rem 0;
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  border: none;
+  outline: none;
+  transition: all 0.4s ease;
+}
+
+/* ----- Services ----- */
+
+.services {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 4rem;
+  flex-wrap: wrap;
+}
+
+.left-ser {
+  width: 40%;
+}
+
+.left-ser img {
+  height: 200px;
+  width: 450px;
+  border-radius: 15px;
+  margin: 30px 0;
+}
+
+.left-ser h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.right-ser {
+  width: 45%;
+}
+
+.r-sec {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.r-sec h3 {
+  font-size: 22px;
+}
+
+.r-sec:nth-child(2) {
+  border-top: #888 solid 1px;
+  border-bottom: #888 solid 1px;
+}
+
+.r-con i {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 1.5rem;
+  background: #18392b;
+  padding: 1.3rem;
+  border-radius: 50%;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-size: 30px;
+  color: #fff;
+}
+
+/* ----- Footer ----- */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  height: 50vh;
+  background-color: #18392b;
+  padding: 4rem 7%;
+  margin-top: 40px;
+}
+
+.left-ftr {
+  width: 40%;
+}
+
+.logo-ftr {
+  height: 65px;
+  width: 330px;
+  cursor: pointer;
+}
+
+.left-ftr p {
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 8rem;
+}
+
+.left-ftr a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.right-ftr {
+  display: flex;
+}
+
+.right-ftr div {
+  color: #fff;
+  padding: 0 2.5rem;
+}
+
+.right-ftr li {
+  list-style: none;
+  padding: 15px 0;
+}
+
+.right-ftr i {
+  margin-right: 10px;
+  font-size: 20px;
+}
+
+/* ----- Hover & active Effects ----- */
+
+.nav-links a:after {
+  content: "";
+  position: absolute;
+  background-color: #18392b;
+  height: 2px;
+  width: 0;
+  left: 0;
+  bottom: -10px;
+  transition: 0.3s;
+}
+
+.nav-links a:hover::after {
+  width: 100%;
+}
+
+.nav-links a:hover {
+  color: #18392b;
+}
+
+.register-btn:hover {
+  transform: scale(1.1);
+}
+
+.search-bar button:hover {
+  transform: scale(1.1);
+}
+
+.exclusives img:hover {
+  transform: scale(1.1);
+}
+
+.trending img:hover {
+  transform: translateY(-15px);
+}
+
+.cta-btn:hover {
+  transform: scale(1.1);
+}
